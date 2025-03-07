@@ -3,16 +3,292 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>NPM Tutorial</title>
     <link rel="stylesheet" href="./css/styles.css" />
+    <title>NPM Tutorial</title>
   </head>
   <body>
-    <section class="developer">
-      <h2>
-        <a href="https://github.com/Mrmantikor" target="_blank"
-          >Developer <br />Lukashenko Bohdan</a
-        >
-      </h2>
-    </section>
+    <div class="container">
+      <h1>Npm Tutorial</h1>
+      <section class="developer">
+        <h2>
+          <a href="https://github.com/Mrmantikor" target="_blank">
+            Developer <br />Lukashenko Bohdan
+          </a>
+        </h2>
+      </section>
+
+      <section>
+        <h2>Перевірка версій Node.js та npm</h2>
+        <div class="command-block">
+          <div class="command-container">
+            <span class="number">1.</span
+            ><code class="command">node --version</code
+            ><span class="description"
+              >— Перевіряє встановлену версію Node.js;</span
+            >
+          </div>
+          <div class="command-container">
+            <span class="number">2.</span
+            ><code class="command">npm --version</code
+            ><span class="description"
+              >— Перевіряє встановлену версію npm.</span
+            >
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <h2>Ініціалізація проекту</h2>
+        <div class="command-block">
+          <div class="command-container">
+            <span class="number">1.</span><code class="command">npm init</code
+            ><span class="description"
+              >— Запускає майстер створення package.json;</span
+            >
+          </div>
+          <div class="command-container">
+            <span class="number">2.</span
+            ><code class="command">npm init -y</code
+            ><span class="description"
+              >— Створює package.json з налаштуваннями за замовчуванням.</span
+            >
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <h2>Налаштування конфігурації npm</h2>
+        <div class="command-block">
+          <div class="command-container">
+            <span class="number">1.</span
+            ><code class="command"
+              >npm config set init-author-name "YOUR_NAME"</code
+            ><span class="description">— Встановлює ім'я автора;</span>
+          </div>
+          <div class="command-container">
+            <span class="number">2.</span
+            ><code class="command"
+              >npm config set init-author-email "YOUR_EMAIL"</code
+            ><span class="description">— Встановлює email автора;</span>
+          </div>
+          <div class="command-container">
+            <span class="number">3.</span
+            ><code class="command">npm config list</code
+            ><span class="description"
+              >— Показує поточну конфігурацію npm;</span
+            >
+          </div>
+          <div class="command-container">
+            <span class="number">4.</span
+            ><code class="command">npm config get &lt;key&gt;</code
+            ><span class="description"
+              >— Отримує значення конкретного налаштування.</span
+            >
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <h2>Встановлення пакетів</h2>
+        <div class="command-block">
+          <div class="command-container">
+            <span class="number">1.</span
+            ><code class="command">npm install &lt;package-name&gt;</code
+            ><span class="description">— Встановлює пакет локально;</span>
+          </div>
+          <div class="command-container">
+            <span class="number">2.</span
+            ><code class="command">npm i &lt;package-name&gt;</code
+            ><span class="description">— Скорочена версія команди;</span>
+          </div>
+          <div class="command-container">
+            <span class="number">3.</span
+            ><code class="command">npm install -g &lt;package-name&gt;</code
+            ><span class="description">— Встановлює пакет глобально;</span>
+          </div>
+          <div class="command-container">
+            <span class="number">4.</span
+            ><code class="command"
+              >npm install &lt;package-name&gt; --save-dev</code
+            ><span class="description"
+              >— Встановлює пакет як dev-залежність;</span
+            >
+          </div>
+          <div class="command-container">
+            <span class="number">5.</span
+            ><code class="command"
+              >npm install &lt;package-name&gt; --save-prod</code
+            ><span class="description"
+              >— Встановлює пакет як основну залежність.</span
+            >
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <h2>Видалення пакетів</h2>
+        <div class="command-block">
+          <div class="command-container">
+            <span class="number">1.</span
+            ><code class="command">npm uninstall &lt;package-name&gt;</code
+            ><span class="description">— Видаляє пакет;</span>
+          </div>
+          <div class="command-container">
+            <span class="number">2.</span
+            ><code class="command">npm r &lt;package-name&gt;</code
+            ><span class="description">— Скорочена версія команди;</span>
+          </div>
+          <div class="command-container">
+            <span class="number">3.</span
+            ><code class="command">npm uninstall -g &lt;package-name&gt;</code
+            ><span class="description"
+              >— Видаляє глобально встановлений пакет.</span
+            >
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <h2>Оновлення пакетів</h2>
+        <div class="command-block">
+          <div class="command-container">
+            <span class="number">1.</span><code class="command">npm update</code
+            ><span class="description"
+              >— Оновлює всі пакети до minor/patch версій;</span
+            >
+          </div>
+          <div class="command-container">
+            <span class="number">2.</span
+            ><code class="command">npm update &lt;package-name&gt;</code
+            ><span class="description">— Оновлює конкретний пакет;</span>
+          </div>
+          <div class="command-container">
+            <span class="number">3.</span
+            ><code class="command">npm outdated</code
+            ><span class="description">— Показує застарілі пакети;</span>
+          </div>
+          <div class="command-container">
+            <span class="number">4.</span
+            ><code class="command">npm install &lt;package-name&gt;@latest</code
+            ><span class="description"
+              >— Встановлює найновішу версію пакета.</span
+            >
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <h2>Очищення кешу</h2>
+        <div class="command-block">
+          <div class="command-container">
+            <span class="number">1.</span
+            ><code class="command">npm cache clean --force</code
+            ><span class="description">— Очищає кеш npm;</span>
+          </div>
+          <div class="command-container">
+            <span class="number">2.</span
+            ><code class="command">npm cache verify</code
+            ><span class="description">— Перевіряє цілісність кешу.</span>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <h2>Робота з директоріями</h2>
+        <div class="command-block">
+          <div class="command-container">
+            <span class="number">1.</span
+            ><code class="command">cd ~/projects</code
+            ><span class="description"
+              >— Перехід до папки "projects" у домашній директорії.</span
+            >
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <h2>Запуск скриптів</h2>
+        <div class="command-block">
+          <div class="command-container">
+            <span class="number">1.</span><code class="command">npm start</code
+            ><span class="description"
+              >— Запускає скрипт start з package.json;</span
+            >
+          </div>
+          <div class="command-container">
+            <span class="number">2.</span
+            ><code class="command">npm run &lt;script-name&gt;</code
+            ><span class="description"
+              >— Запускає користувацький скрипт з package.json;</span
+            >
+          </div>
+          <div class="command-container">
+            <span class="number">3.</span
+            ><code class="command">npm run dev</code
+            ><span class="description">— Запускає dev-сервер.</span>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <h2>Зупинка сервера або процесу</h2>
+        <div class="command-block">
+          <div class="command-container">
+            <span class="number">1.</span><code class="command">Ctrl + C</code
+            ><span class="description">— Для користувачів Windows;</span>
+          </div>
+          <div class="command-container">
+            <span class="number">2.</span
+            ><code class="command">Control + C</code
+            ><span class="description">— Для користувачів MacOS і Linux.</span>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <h2>Управління залежностями</h2>
+        <div class="command-block">
+          <div class="command-container">
+            <span class="number">1.</span><code class="command">npm list</code
+            ><span class="description">— Показує встановлені пакети;</span>
+          </div>
+          <div class="command-container">
+            <span class="number">2.</span
+            ><code class="command">npm list -g --depth=0</code
+            ><span class="description"
+              >— Показує глобально встановлені пакети;</span
+            >
+          </div>
+          <div class="command-container">
+            <span class="number">3.</span
+            ><code class="command">npm ls &lt;package-name&gt;</code
+            ><span class="description"
+              >— Показує інформацію про конкретний пакет.</span
+            >
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <h2>Повторна установка залежностей</h2>
+        <div class="command-block">
+          <div class="command-container">
+            <span class="number">1.</span
+            ><code class="command"
+              >rm -rf node_modules package-lock.json && npm install</code
+            ><span class="description"
+              >— Видаляє папку node_modules і package-lock.json, а потім
+              перевстановлює всі залежності;</span
+            >
+          </div>
+          <div class="command-container">
+            <span class="number">2.</span><code class="command">npm ci</code
+            ><span class="description"
+              >— Встановлює залежності строго за package-lock.json.</span
+            >
+          </div>
+        </div>
+      </section>
+    </div>
   </body>
 </html>
